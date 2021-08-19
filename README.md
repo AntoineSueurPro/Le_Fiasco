@@ -1,4 +1,4 @@
-# Iegration HTML - CSS - Media Quesries
+# Integration site Restaurant
 
 - Responsive
 - Flexbox
