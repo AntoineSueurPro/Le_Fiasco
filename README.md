@@ -5,6 +5,6 @@
 - Css
 - HTML
 - W3C
-- Media Quesries
+- Media Queries
 
 Lien du projet : https://integration.antoine-sueur.com
