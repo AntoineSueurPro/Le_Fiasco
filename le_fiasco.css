@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Sans+Pro:wght@300;400;600;700&display=swap%27');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+body, html{
+    margin: 0;
+    padding: 0;;
+} 
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* hr {
+    width: 20px;
+    height: 2px;
+    background-color: #C89446;
+    border: none;
+} */
+
+p {
+    color: #6f6f6f;
+    line-height: 25px;
+}
+
+
+/*----------------------------------------------------------------SECTION HEADER----------------------------------------------------------------------------------------------------------*/
+
+header a{ 
+    color: white;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+header{
+    background: linear-gradient(
+180deg
+, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), url(img/eggs.jpg) center center / cover no-repeat;
+    color: white;
+}
+
+header a:hover {
+    color: #C89446;
+}
+
+
+
+.reserver:hover {
+    background-color: #C89446;
+    color: white;
+    transition: background-color .3s;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+    
+}
+
+.nom{
+    padding: 15px;
+    margin-left: 70px;
+    
+    
+}
+
+.navbar-items{
+    padding: 15px;
+    margin-right: 70px;
+    
+}
+
+.navbar-items a{
+    margin-left: 15px;
+}
+
+.textHeader{
+    padding : 130px 0 207px 0;
+    text-align: center;
+}
+
+.reserver{
+    border: 1px solid #C89446;
+    padding: 6px;
+}
+
+.p-welcome{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    color: #C89446;
+    margin: 0;
+}
+
+.h1-fiasco{
+    margin: 0;
+    font-size: 3.5em;
+    letter-spacing: 0.13em;
+}
+
+.h2-specialite{
+    margin: 0;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
+
+/*----------------------------------------------------------------FIN SECTION HEADER------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------SECTION MENU------------------------------------------------------------------------------------------------------------*/
+
+.menu {
+    background: fixed top 95px right 0px url(../img/oranges.jpg) no-repeat, fixed top 640px left 0px url(../img/spices.jpg) no-repeat;
+}
+
+.imgTextContainer {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.blocText {
+    width: 50%;
+}
+
+.blocText hr {
+    margin: 0 0 10px 0;
+    width: 20px;
+    height: 2px;
+    background-color: #C89446;
+    border: none;
+}
+
+.blocText h2 {
+    font-family: 'Pinyon Script', cursive;
+    color: #C89446;
+    margin: 0;
+    font-size: 40px;
+}
+
+.blocText h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.blocText a {
+    color: #C89446;
+    text-decoration: none;
+}
+
+.blocImage {
+    padding: 10px 50px 20px 50px;
+    position: relative;
+}
+
+.blocImage img {
+    position: relative;
+    z-index: 1;
+}
+
+.blocImage::before {
+    content: '';
+    display: block;
+    border: solid 1px #C89446;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 350px;
+    height: 425px;
+    z-index: 0;
+}
+.reverse .blocImage::before {
+    content: '';
+    display: block;
+    border: solid 1px #C89446;
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    width: 350px;
+    height: 425px;
+    z-index: 0;
+}
+
+.menuBioContainer {
+    max-width: 650px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 160px;
+}
+
+.menuBio h2 {
+    font-family: 'Pinyon Script', cursive;
+    color: #C89446;
+    margin: 0;
+    font-size: 40px;
+}
+.menuBio h3 {
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.menuBio hr {
+    width: 20px;
+    height: 2px;
+    background-color: #C89446;
+    border: none;
+}
+
+.menuBioContainer a {
+    color: #6f6f6f;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menuBioContainer a:nth-child(1) {
+    text-decoration: underline;
+    text-decoration-color: #C89446;
+    text-decoration-thickness: 3px;
+}
+.menuBioContainer a:hover {
+    text-decoration: underline;
+    text-decoration-color: #C89446;
+    text-decoration-thickness: 3px;
+}
+
+.menuBioContainer nav a {
+    display: block;
+
+}
+.menuBioContainer nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+/*----------------------------------------------------------------FIN SECTION MENU--------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------DEBUT SECTION PLATS-----------------------------------------------------------------------------------------------------*/
+
+.platBioContainer {
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    z-index: 4;
+}
+
+.platItemG {
+    display: flex;
+    text-align: left;
+    margin-bottom: 100px;
+}
+.platItemD {
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.platTextG, .platTextD {
+    max-width: 350px;
+    /* margin-bottom: 100px; */
+      
+}
+
+.platTextG h3, .platTextD h3 {
+    margin-top: 0px;
+}
+
+.platTextG {
+    margin-left: 30px;
+}
+
+.platTextD {
+    margin-right: 30px;
+}
+
+.platTextG p {
+    margin-bottom:0px ;
+    padding-bottom: 20px;
+    
+}
+.platTextD p {
+    margin-bottom:0px ;
+    padding-bottom: 20px;
+    
+}
+.platBioContainer::before {
+    content: '';
+    display: block;
+    border: solid 1px #C89446;
+    position: absolute;
+    left: 50%;
+    bottom: -105px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    transform: translate(-50%, -260px) rotate(45deg);
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.price {
+    margin-top: 0;
+    font-family: 'Pinyon Script', cursive;
+    color: #C89446;
+    font-size: 40px;
+}
+
+/*----------------------------------------------------------------FIN SECTION PLAT--------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------SECTION CHEF------------------------------------------------------------------------------------------------------------*/
+
+.chefContainer {
+    max-width: 1200px;
+    padding: 0px 30px 0px 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.chefText {
+    max-width: 800px;
+    text-align: justify;
+}
+.chefText hr {
+    margin: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #C89446;
+    border: none;
+}
+
+.chefText h2 {
+    font-family: 'Pinyon Script', cursive;
+    color: #C89446;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.chefText h3 {
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.chefText a {
+    color: #C89446;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------FIN SECTION CHEF--------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------DEBUT SECTION RESERVATION-----------------------------------------------------------------------------------------------*/
+
+.reservation {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), url(img/reservation.jpg) center center / cover no-repeat;
+    padding : 130px 0 180px 0;
+    text-align: center;
+}
+
+.reservationIntro p {
+    color: white;
+    opacity: 0.5;
+}
+.reservationIntro {
+    width: 35%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.reservation hr {
+    margin-bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #C89446;
+    border: none;
+}
+
+.reservation h2 {
+    font-family: 'Pinyon Script', cursive;
+    color: #C89446;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.reservation h3 {
+    font-size: 25px;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+ form button {
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: #C89446;
+    width: 30%;
+    padding: 10px;
+    margin-top: 90px;
+}
+
+input, select{
+    background: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: white;
+    text-transform: uppercase;
+    width: 30%;
+    padding: 15px;
+}
+
+select option {
+    color: #6f6f6f;
+} 
+
+/*----------------------------------------------------------------FIN RESERVATION---------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------DEBUT SECTION RECIPE----------------------------------------------------------------------------------------------------*/
+
+.recipe {
+    background: no-repeat top left / 50vw auto url(img/news-bg.jpg);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.recipeBlog hr {
+    opacity: 0.3;
+}
+
+.recipeText hr {
+    margin-right: 0px;
+    width: 20px;
+    height: 2px;
+    background-color: #C89446;
+    border: none;
+}
+
+.recipeText h2 {
+    font-family: 'Pinyon Script', cursive;
+    color: #C89446;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.recipeText h3 {
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.recipeText {
+    text-align: right;
+    max-width: 1100px;
+    margin: auto; 
+}
+
+.recipeBlog {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.date {
+    font-weight: bold;
+    color: black;
+}
+
+.recipeBlog a {
+    color: #C89446;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------FIN SECTION RECIPE------------------------------------------------------------------------------------------------------*/
+
+ /*----------------------------------------------------------------SECTION MAP------------------------------------------------------------------------------------------------------------*/
+
+.map iframe {
+    width: 100%;
+}
+
+ /*----------------------------------------------------------------FIN SECTION MAP--------------------------------------------------------------------------------------------------------*/
+
+ /*----------------------------------------------------------------DEBUT FOOTER-----------------------------------------------------------------------------------------------------------*/
+
+ footer {
+     background: no-repeat bottom right url(img/splash.png);
+     background-color: #373737;
+     margin: 0;
+ }
+
+ .footerContainer {
+     width: 70%;
+     margin: auto;
+ }
+
+ .footerInfo {
+     display: flex;
+     justify-content: space-between;
+     
+ }
+
+ footer p {
+     color: white;
+ }
+
+ .theFiasco, .contact, .hours {
+     display: flex;
+     flex-direction: column;
+     width: 25%;
+     font-size: 14px;
+ }
+
+ .gold {
+     color: #C89446;
+ }
+
+ footer div.copyright p {
+     margin: 0;
+ }
+
+ /*----------------------------------------------------------------FIN FOOTER-------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------MEDIA QUERIES-----------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+
+    .blocImage::before, .reverse .blocImage::before {
+        display: none;
+    }
+}
+@media screen and (max-width: 1079px) {
+
+    .platBioContainer::before {
+        display: none;
+    }
+
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+/*----------------------------------------------------------------PARTIE HEADER-----------------------------------------------------------------------------------------------------------*/
+
+    .nom{
+        padding: initial;
+        margin-left: initial;
+        margin-bottom: 30px;
+        
+    }
+    
+    .navbar-items{
+        padding: initial;
+        margin-right: initial;
+        
+        
+    }
+
+    .navbar {
+        padding-top: 15px;
+    }
+
+/*FIN HEADER*/
+
+/*SECTION MENU*/
+
+    .blocImage img {
+        border: 1px solid #C89446;
+    }
+
+    .blocText {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .menuBioContainer {
+        margin-bottom: 50px;
+    }
+
+
+    .reverse {
+    flex-direction: row;
+    }
+
+    .imgTextContainer {
+        margin: 0;
+        display: block;
+    }
+
+    .blocImage img {
+        display: block;
+        margin: auto;
+    }
+
+    .menuBioContainer nav {
+        justify-content: center;
+    
+    }
+    .menuBioContainer nav a {
+        padding: 5px;
+    
+    }
+/* FIN SECTION MENU*/
+
+    
+
+/* SECTION PLAT*/
+
+    .platItemD {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .platTextD {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+
+    .platTextG, .platTextD {
+        margin-bottom: 15px;
+          
+    }
+
+    .platItemG {
+        margin-bottom: 0px;
+    }
+
+    .platBioContainer {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .platImage {
+        width: 100%;
+    }
+    
+/*FIN SECTION PLAT*/
+
+/* SECTION CHEF*/
+
+.chefContainer {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: initial;
+}
+
+.chefImage img {
+    border: 1px solid #C89446;
+    width: 100%;
+    margin-bottom: 30px
+}
+
+.chefImage {
+    width: 70%;
+    margin: auto; 
+    }
+
+.chefText {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/*FIN SECTION CHEF*/
+
+/* SECTION RESERVATION */
+
+form {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+form button {
+    width: 90%;
+    margin-top: 0px;
+}
+
+input, select{
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.reservationIntro {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.reservation {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* FIN RESERVATION */
+
+/* SECTION RECIPE */
+
+    .recipeText, .recipeBlog {
+        width: 90%;
+    }
+
+/* FIN RECIPE */
+}
+
+@media screen and (min-width: 768px) {
+
+    /* SECTION HEADER*/
+
+    .navbar-items{
+        margin-top: 0px;   
+    }
+
+    /* FIN HEADER */
+
+    /*SECTION CHEF*/
+    .chefImage {
+    width: 50%;
+    margin: auto; 
+    }
+    /* FIN CHEF*/
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1079px) {
+    .platItemD {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .platTextD {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+
+    .platTextG, .platTextD {
+        margin-bottom: 15px;
+          
+    }
+
+    .platItemG {
+        margin-bottom: 0px;
+    }
+
+    .platBioContainer {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .platImage {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1620px) {
+    .platBioContainer {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .platBioContainer {
+        max-width: 1200px
+    }
+}
